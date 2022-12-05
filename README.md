@@ -1,5 +1,5 @@
 
-# Chuck file
+# Chunk file
 
 
 A platform that accepts CSV or JSON large files, and break them into smaller bits
@@ -41,7 +41,7 @@ NodeJS, Javascript, HTML, CSS...
 
 
 ## How to use
-1. Go to chuck file(web app)
+1. Go to chunk file(web app)
 2. Sign up with your email
 3. Login with your details
 4. Upload your .csv file into the folder you created
