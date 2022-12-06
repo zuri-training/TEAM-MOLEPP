@@ -1,7 +1,7 @@
 const express = require('express');
 const { json } = require("express");
 const connect = require('./config/database');
-const taskRoute = require('./router/userRouter');
+const userRouter = require('./router/userRouter');
 
 connect ()
 
@@ -16,3 +16,4 @@ app.get('/', (req,res) => {
 });
 
 app.listen(PORT, () => console.log(`serving at port ${PORT}`));
+
