@@ -9,9 +9,11 @@ connect ()
 const app = express();
 app.use(json());
 
+
 app.use(cors())
 
-app.use("/api/vi/users", userRouter);
+// app.use("/", router);
+app.use("/api/v1/users", userRouter);
 
 
 app.get('/', (req,res) => {
