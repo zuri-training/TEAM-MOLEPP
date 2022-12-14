@@ -84,7 +84,7 @@ A group of I4GxZuri internship trainees comprising of product designers, fronten
 These are platforms that helped us build the project:
 - https://www.splitcsv.com/
 - https://www.gdgsoft.com/gsplit
-- https://extendsclass.com/csv-splitter.html (edited) 
+- https://extendsclass.com/csv-splitter.html 
 - https://greensock.com/forums/forum/11-gsap/
 
 
