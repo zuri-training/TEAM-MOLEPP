@@ -1,0 +1,71 @@
+        .fullscreen-bg {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          overflow: hidden;
+          z-index: -100;
+        }
+        
+        .fullscreen-bg__video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        
+        @media (min-aspect-ratio: 16/9) {
+          .fullscreen-bg__video {
+            height: 300%;
+            top: -100%;
+          }
+        }
+        
+        @media (max-aspect-ratio: 16/9) {
+          .fullscreen-bg__video {
+            width: 300%;
+            left: -100%;
+          }
+        }
+        
+        @media (max-width: 767px) {
+          .fullscreen-bg {
+            background: url('../img/teacher.jpg') center center / cover no-repeat;
+          }
+        
+          .fullscreen-bg__video {
+            display: none;
+          }
+        }
+
+        #fader{
+          width:100%;
+          height:100%;
+          top:0px;
+          left:0px;
+          background-image:url(../img/transparent.png) ;
+          background-repeat:repeat;
+          /*display: none; */
+          position:fixed;
+          z-index: 200000;
+      }
+
+      #wrapper{
+        width: 60%;
+          height: auto;
+        margin: 0 auto;
+        margin-top: 5%;
+        /* display:none;*/
+          overflow: auto;
+          text-align: center;
+      
+      }
+
+      @media all and (max-width:650px){
+        #wrapper{
+        width:90%;
+      }
+      }
+      /*kenny*/

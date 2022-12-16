@@ -5,7 +5,8 @@
 }
 
 body{
-    background: rgb(97, 97, 97);
+    /* background: rgb(97, 97, 97); */
+    background: url(/Image/background_dv.jpg);
 }
 
 .container{
@@ -15,6 +16,11 @@ body{
     min-height: 90vh;
     padding:30px 30px;
     border-radius: 12px;
+    transition:all 0.2s ease-in 0.2s;
+    -moz-transition:all 0.2s ease-in 0.2s;
+    -webkit-transition:all 0.2s ease-in 0.2s;
+    -ms-transition:all 0.2s ease-in 0.2s;
+    -o-transition:all 0.2s ease-in 0.2s;
 }
 
 .logo{
@@ -81,7 +87,7 @@ body{
 .alt-login_sites {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: center;
     padding-top: 20px;
 }
@@ -89,4 +95,12 @@ body{
 .alt-login_sites a img{
     width: 30px;
     height: 30px;
+}
+
+@media all and (max-width:700px){
+    .container{
+    background: #fff;
+    margin: 5vh auto;
+    width: 80%;
+}   
 }

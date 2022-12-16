@@ -21,7 +21,7 @@ function loginUsers(e){
         if(data.message === "Login Success"){
             alert(data.message);
             setTimeout(() => {
-                window.location.href = '../Landing Page/index.html';
+                window.location.href = '../Dashboard/Dashboard.html';
             }, 1500);
         }
     });
