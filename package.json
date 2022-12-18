@@ -1,31 +1,26 @@
 {
-  "name": "team-molepp",
-  "version": "1.0.0",
-  "description": "A platform that accepts CSV or JSON large files, and break them into smaller bits\r # By Team_Molepp ! 👋",
-  "main": "index.js",
+  "name": "chunk-file",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "node ./backend/server.js",
-    "dev": "nodemon ./backend/server.js"
+    "start": "nodemon ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zuri-training/TEAM-MOLEPP.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/zuri-training/TEAM-MOLEPP/issues"
-  },
-  "homepage": "https://github.com/zuri-training/TEAM-MOLEPP#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
-    "cors": "^2.8.5",
+    "body-parser": "^1.20.1",
+    "cookie-parser": "~1.4.4",
+    "csv-parser": "^3.0.0",
+    "debug": "~2.6.9",
     "express": "^4.18.2",
-    "mongoose": "^6.8.0"
-  },
-  "devDependencies": {
-    "dotenv": "^16.0.3",
-    "nodemon": "^2.0.20"
+    "fast-csv": "^4.3.6",
+    "http-errors": "~1.6.3",
+    "jade": "^1.9.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.5",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.5-lts.1",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
   }
 }
