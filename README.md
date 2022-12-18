@@ -28,10 +28,6 @@ This project, **Chunk File**, is a project initiative introduced by a group of I
 - Splitting files into different sizes and numbers
 
 
-### 🚀 About Us
-A group of I4GxZuri internship trainees comprising of product designers, frontend developers and backend developers.
-
-
 
 
 ## Authors
