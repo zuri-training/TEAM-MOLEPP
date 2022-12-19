@@ -13,7 +13,7 @@ NodeJS, Javascript, HTML, CSS...
 
 ## Live Link
 
-<a target="blank">https://chunkfile-8iaq.onrender.com</a>
+https://chunkfile-8iaq.onrender.com
 
 ## Project Description
 
