@@ -12,10 +12,10 @@ const authorizedRoute = require("./routes/authorizedRoute");
 const secureRoute = require("./routes/secure-routes");
 const connect = require("./utils/database");
 
-connect(
-  "mongodb+srv://Tobae:tobssetup@chunkfile.2ugmv4k.mongodb.net/chunkit?retryWrites=true&w=majority"
-);
-// connect();
+// connect(
+//   "mongodb+srv://Tobae:tobssetup@chunkfile.2ugmv4k.mongodb.net/chunkit?retryWrites=true&w=majority"
+// );
+connect();
 const app = express();
 
 // view engine setup
@@ -32,12 +32,12 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", routes);
 app.use("/", authorizedRoute);
 
-// Plug in the JWT strategy as a middleware so only verified users can access this route.
-app.use(
-  "/users",
-  passport.authenticate("jwt", { session: false }),
-  secureRoute
-);
+// // Plug in the JWT strategy as a middleware so only verified users can access this route.
+// app.use(
+//   "/users",
+//   passport.authenticate("jwt", { session: false }),
+//   secureRoute
+// );
 
 // error handler
 app.use(function (err, req, res, next) {

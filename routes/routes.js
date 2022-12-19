@@ -18,19 +18,6 @@ router.use(express.static(path.join(__dirname, "../public")));
 router.get("/", landingPage);
 router.get("/home", landingPage);
 router.get("/index", landingPage);
-// router.get("/login", loginPage);
-// ...
-// router.get("/", homepage);
-
-// ...
-// router.post(
-//   "/signup",
-//   passport.authenticate("signup", { session: false }),
-//   signup
-// );
-
-// // ...
-// router.post("/login", login);
 
 // // router.post("/files/:id", upload.any(), fileSplitter);
 // router.post("/files/:id", fileSplitter);

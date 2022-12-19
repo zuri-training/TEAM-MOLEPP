@@ -15,28 +15,24 @@ exports.register = async (req, res) => {
   try {
     const email = req.body.email;
     const password = req.body.password;
+    const confirmPassword = req.body["password-confirm"];
 
     const oldUser = await userModel.findOne({ email });
     if (oldUser) {
       return res.status(409).send("User already Exists!");
     }
-    if (password[0] !== password[1]) {
+    if (password !== confirmPassword) {
       return res
         .status(500)
         .send("Confirm password does not match initial password. ");
     }
-    console.log(email, password);
-    const hashpassword = await bcrypt.hash(password[0], 12);
-    console.log("hashhhh", hashpassword);
+    const hashpassword = await bcrypt.hash(password, 12);
     const newUser = new userModel({
       email: email.toLowerCase(),
       password: hashpassword,
     });
 
-    console.log("newUswerrrr", newUser);
-
     const user = await newUser.save();
-    console.log("userrrr", user);
 
     res.render("Dashboard", { user: user });
   } catch (error) {
@@ -58,8 +54,6 @@ exports.login = async (req, res) => {
     if (!match) {
       return res.status(409).send("Invalid Password Try Again");
     }
-
-    const { password, ...others } = user._doc;
 
     res.render("Dashboard", { user: user });
   } catch (error) {
