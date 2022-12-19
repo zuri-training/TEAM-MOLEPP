@@ -12,10 +12,10 @@ const authorizedRoute = require("./routes/authorizedRoute");
 const secureRoute = require("./routes/secure-routes");
 const connect = require("./utils/database");
 
-// connect(
-//   "mongodb+srv://Tobae:tobssetup@chunkfile.2ugmv4k.mongodb.net/chunkit?retryWrites=true&w=majority"
-// );
-connect();
+connect(
+  "mongodb+srv://Tobae:tobssetup@chunkfile.2ugmv4k.mongodb.net/chunkit?retryWrites=true&w=majority"
+);
+// connect();
 const app = express();
 
 // view engine setup
