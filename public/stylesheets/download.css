@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    transition:all 0.2s ease-in 0.2s;
+    -moz-transition:all 0.2s ease-in 0.2s;
+    -webkit-transition:all 0.2s ease-in 0.2s;
+    -ms-transition:all 0.2s ease-in 0.2s;
+    -o-transition:all 0.2s ease-in 0.2s;
+}
+
+.header{
+    background: linear-gradient(180deg, rgba(51, 48, 209, 0.6) 0%, rgba(51, 48, 209, 0) 100%);
+filter: drop-shadow(0px 4px 4px rgba(51, 48, 209, 0.05));
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 100%;
+height: 60px;
+
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img{
+    width: 40%;
+    height: 40%;
+    margin: 0px 15px;
+}
+
+
+.right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px 20px;
+    align-items: center;
+}
+
+.right button{
+    margin-left: 20px;
+    text-decoration: none;
+    width: 80px;
+    height: 30px;
+    background: none;
+    border-color: rgb(17, 16, 16, .4);
+    border-radius: 4px;
+}
+
+.right a{
+    text-decoration: none;
+}
+
+.section_main{
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nav-bar{
+    height: 100%;
+    width: 10%;
+    background: #EAEAFA;   
+}
+
+.main-page{
+    width: 90%;
+    min-height: 100%;
+    background: #F5F5F5;
+}
+
+h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-left: 40px;
+    color: #3330D1;
+}
+
+.paragraph {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    padding-bottom: 35px;
+    padding-left: 40px;
+    color: #5553D9;
+    transform: rotate(-0.3deg);
+}
+
+span{
+    color: #2E2A2A;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.file_1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.file_1 p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #453F3F;
+}
+
+.file_1 button{
+    width: 100px;
+    height: 30px;
+    background: #3330D1;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.save_btn{
+    justify-content: left;
+}
+
+.save_btn button {
+    width: 100px;
+    height: 30px;
+    background: #3330D1;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.canc_btn{
+    gap: 10px;
+}
+
+.cancel {
+    width: 100px;
+    height: 30px;
+    background: rgba(241, 36, 23, 0.94);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.savall{
+    width: 100px;
+    height: 30px;
+    background: #3330D1;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+@media all and (max-width:480px){
+    body{
+        min-width: 100%;
+    }
+}
+
+@media all and (max-width:700px){
+    body{
+    background: #fff;
+    margin: 5vh auto;
+    width: 100%;
+}   
+}
