@@ -4,7 +4,7 @@ const jwt = require("jsonwebtoken");
 const multer = require("multer");
 const upload = multer();
 
-const { signup, login, homepage } = require("../controllers/authController");
+// const { signup, login, homepage } = require("../controllers/authController");
 // const fileSplitter = require("../services/fileSplitter.service");
 const { fileSplitter, getFiles } = require("../services/user.service");
 const { landingPage } = require("../controllers/pageController");
@@ -23,18 +23,18 @@ router.get("/index", landingPage);
 // router.get("/", homepage);
 
 // ...
-router.post(
-  "/signup",
-  passport.authenticate("signup", { session: false }),
-  signup
-);
+// router.post(
+//   "/signup",
+//   passport.authenticate("signup", { session: false }),
+//   signup
+// );
 
-// ...
-router.post("/login", login);
+// // ...
+// router.post("/login", login);
 
-// router.post("/files/:id", upload.any(), fileSplitter);
-router.post("/files/:id", fileSplitter);
+// // router.post("/files/:id", upload.any(), fileSplitter);
+// router.post("/files/:id", fileSplitter);
 
-router.get("/files/:id", getFiles);
+// router.get("/files/:id", getFiles);
 
 module.exports = router;

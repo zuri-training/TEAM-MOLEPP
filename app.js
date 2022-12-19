@@ -8,6 +8,7 @@ const flash = require("connect-flash");
 
 require("./services/auth.service");
 const routes = require("./routes/routes");
+const authorizedRoute = require("./routes/authorizedRoute");
 const secureRoute = require("./routes/secure-routes");
 const connect = require("./utils/database");
 
@@ -29,10 +30,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", routes);
+app.use("/", authorizedRoute);
 
 // Plug in the JWT strategy as a middleware so only verified users can access this route.
 app.use(
-  "/api/v1/users",
+  "/users",
   passport.authenticate("jwt", { session: false }),
   secureRoute
 );
@@ -47,9 +49,5 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render("error");
 });
-
-// app.listen(3000, () => {
-//   console.log("Server started.");
-// });
 
 module.exports = app;
