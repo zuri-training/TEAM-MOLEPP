@@ -58,11 +58,13 @@ function isLoggedIn(req, res, next) {
 router.get("/login", loginForm);
 
 router.post("/login/password", login);
+router.get("/login/password", dashboard);
 router.get("/register", registerForm);
 router.post("/register/user", register);
 router.get("/Dashboard", dashboard);
 router.post("/Dashboard", fileHandler);
 router.get("/download", download);
+router.post("/download", download);
 router.get("/saved", saved);
 router.get("/save", save);
 router.get("/files", files);
