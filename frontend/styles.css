@@ -283,12 +283,11 @@ button {
 .how_it_works {
    display: flex;
    margin: 20px 0;
-   justify-content: center;
-   flex-wrap: wrap;
 }
 
 .how_item{
    width: 250px;
+   margin: 20px auto;
 }
 
 .how_item img{
@@ -296,7 +295,7 @@ button {
 }
 
 .organisations{
-   margin-top: 180px;
+   margin: 130px 0;
    text-align: center;
 }
 
@@ -321,7 +320,6 @@ button {
 
 /* Footer Section */
 #footer {
-   margin-top: 100px;
    height: 300px;
    background: linear-gradient(180deg, rgba(51, 48, 209, 0.6) 0%, rgba(51, 48, 209, 0) 100%);
 }
@@ -336,15 +334,15 @@ button {
    width: 30px;
 }
 #footer_content {
+   padding-top: 50px;
    display: flex;
-   flex-direction: row;
    justify-content: center;
    gap: 180px;
 }
 
 .footer_content_item{
    display: flex;
-   margin-top: 50px;
+   margin-top: 0px;
    flex-direction: column;
 }
 
@@ -378,256 +376,9 @@ nav .fas{
    font-size: 1.5rem;
 }
 
-@media screen and (max-width: 375px) {
- /*nav bar container*/
-nav .fas{
-   display: block;
-}
 
-nav {
-   height: 80px;
-   padding: 0 10px;
-}
 
-.logo {
-   width: 90px;
-   margin-top: 5px;
-   margin-left: -5px;
-}
-
-#sidemenu{
-   display: block;
-   background: linear-gradient(180deg, rgba(51, 48, 209, 2) 0%, rgba(51, 48, 209, 0.9) 100%);
-   text-align: center;
-   width: 200px;
-   right: -200px;
-   padding-top: 80px;
-   position: fixed;
-   top: 0;
-   z-index: 2;
-   transition: right 0.5s;
-}
-
-.nav_bar1 ul li {
-   display: block;
-   font-size: 25px;
-   padding: 20px 50px 0;
-   margin: 10px 0px 0;
-}
-
-/* nav buttons*/
-.nav_btn{
-   margin: 50px 20px;
-}
-button {
-   width: 110px;
-   height: 40px;
-   font-size: 0.8rem;
-   margin: 5px 0px;
-}
-
-/* hero section */
-#illustration {
-   display: block;
-}
-
-.illustration1 {
-   width: 100%;
-   height: 300px;
-   left: 0px;
-}
-.illustration2 {
-   margin-right: 10px;
-   padding: 0 10px;
-}
-.illustration2 h1 {
-   margin-top: 20px;
-   font-size: 30px;
-}
-.illustration2 h3 {
-   margin-top: 5px;
-   margin-left: 30px;
-   font-size: 20px;
-}
-.illustration2 button {
-   width: 140px;
-   height: 50px;
-   top: 60px;
-   margin: 30px 112px 0;
-   font-size: 18px;
-}
-
-/* Feature Section */
-
-#feature h2 {
-   margin-top: 50px;
-   font-size: 2rem;
-}
-
-.features1 {
-   display: block;
-   padding: 0 20px;
-}
-
-.features1_items {
-   margin: 30px -35px 0 60px;
-   padding: 24px 10px 0;
-   color: #2e2a2a;
-   width: 65%;
-   height: 197px;
-}
-
-.features1_items h3 {
-   font-size: 28px;
-}
-
-.features1_items p {
-   font-size: 15px;
-}
-
-.feature_btn {
-   width: 140px;
-   height: 50px;
-   margin: 70px 115px;
-   font-size: 18px;
-}
-
-/* Usage Section */
-#usage{
-   margin: 50px 0px 0;
-}
-
-.json {
-   display: block;
-   margin: 10px 0px 0;
-}
-
-.json1 {
-   width: 250px;
-   height: 180px;
-   margin-left: 65px;
-}
-.json1 p {
-   margin: 10px 10px;
-   padding: 30px 0;
-   font-size: 24px;
-}
-
-.json2 {
-   width: 435px;
-   margin-top: 60px;
-   margin-left: -60px;
-}
-
-.csv {
-   display: block;
-   margin-top: -100px;
-}
-
-.csv1 {
-   width: 60%;
-   margin-left: 65px;
-}
-
-.csv2 {
-   width: 250px;
-   height: 180px;
-   margin-top: -100px;
-   margin-left: 65px;
-}
-
-.csv2 p {
-   margin: 10px 10px;
-   padding: 30px 0;
-   font-size: 24px;
-}
-
-/* About Section */
-#about {
-   margin-top: 100px;
-   text-align: center;
-   color: #3330d1;
-}
-
-.about_heading{
-   font-size: 2rem;
-}
-
-.how_it_works {
-   display: block;
-   margin: 20px 65px;
-}
-
-.how_item{
-   width: 230px;
-}
-
-.how_item img{
-   width: 100%;
-}
-
-/* Sponsors section */
-
-.organisations{
-   margin-top: 120px;
-}
-
-.organisations h1{
-   font-size: 2rem;
-}
-
-.organisations_item {
-   display: flex;
-   margin: 30px;
-}
-
-.ingressive_logo{
-   margin-top: 0px;
-}
-
-.ingressive_logo img, .zuri_logo img{
-   width: 60%;
-}
-
-/* Footer Section */
-#footer {
-   margin-top: 100px;
-   height: 100%;
-}
-
-.product_icon{
-   margin: 10px 0;
-   justify-content: center;
-}
-
-#footer_content {
-   text-align: center;
-   display: block;
-   padding-top: 50px;
-}
-
-.footer_content_item{
-   margin-top: 40px;
-}
-
-.footer_content_item h4{
-   font-size: 25px;
-}
-
-.footer_content_item a{
-   font-size: 20px;
-   line-height: 25px;
-}
-
-.footer_bottom {
-   margin-top: 60px;
-   text-align: center;
-   font-size: 18px;
-}
-
-}
-
-@media screen and (min-width: 376px) and (max-width: 768px) {
+@media screen and  (max-width: 768px) {
 
    /*nav bar container*/
   nav .fas{
@@ -649,6 +400,7 @@ button {
      display: block;
      text-align: center;
      width: 200px;
+     height: 100vh;
      right: -200px;
      background: linear-gradient(180deg, rgba(51, 48, 209, 2) 0%, rgba(51, 48, 209, 0.9) 100%);
      padding-top: 80px;
@@ -686,11 +438,12 @@ button {
      width: 100%;
   }
   .illustration2 {
-     margin-right: 10px;
-     padding: 0 10px;
+     /* margin-right: 10px; */
+     padding: 0 35px;
+     margin: -250px auto 0;
   }
   .illustration2 h1 {
-     margin-top: 20px;
+     /* margin-top: 0px; */
      font-size: 30px;
   }
   .illustration2 h3 {
@@ -712,12 +465,12 @@ button {
   }
   #feature h2 {
      margin-top: 70px;
-     font-size: 2.3rem;
+     font-size: 2rem;
   }
   
   .features1 {
      display: block;
-     padding: 0 20px;
+     padding: 0 0px;
   }
   
   .features1_items {
@@ -729,11 +482,11 @@ button {
   }
   
   .features1_items h3 {
-     font-size: 35px;
+     font-size: 30px;
   }
   
   .features1_items p {
-     font-size: 23px;
+     font-size: 20px;
   }
   
   .feature_btn {
@@ -754,7 +507,7 @@ button {
   }
   
   .json1 {
-     width: 350px;
+     width: 300px;
      height: 230px;
      margin: 10px auto;
   }
@@ -765,18 +518,18 @@ button {
   }
   
   .json2 {
-     width: 700px;
+     width: 100%;
      margin: 60px auto;
   }
   
   .csv {
      display: block;
-     margin-top: 80px;
+     margin-top: 20px;
   }
   
   .csv1 {
      width: 45%;
-     margin: 60px auto;
+     margin: 10px auto 0;
   }
   
   .csv2 {
@@ -798,16 +551,18 @@ button {
   }
   
   .about_heading{
-     font-size: 2.3rem;
+     font-size: 2rem;
+     text-align: center;
   }
   
   .how_it_works {
      display: block;
-     margin: 20px 200px;
+     margin: 20px 0;
   }
   
   .how_item{
-     width: 350px;
+     width: 280px;
+     margin: 20px auto;
   }
   
   .how_item img{
@@ -835,6 +590,257 @@ button {
   
   .ingressive_logo img, .zuri_logo img{
      width: 60%;
+  }
+  
+  /* Footer Section */
+  #footer {
+     height: 100%;
+  }
+  
+  .product_icon{
+     margin: 10px 0;
+     justify-content: center;
+  }
+  
+  #footer_content {
+     text-align: center;
+     display: block;
+     padding-top: 50px;
+  }
+  
+  .footer_content_item{
+     margin-top: 40px;
+  }
+  
+  .footer_content_item h4{
+     font-size: 25px;
+  }
+  
+  .footer_content_item a{
+     font-size: 20px;
+     line-height: 25px;
+  }
+  
+  .footer_bottom {
+     margin-top: 60px;
+     text-align: center;
+     font-size: 18px;
+  }
+  
+  }
+
+    
+
+  @media screen and (max-width: 375px) {
+   /*nav bar container*/
+  nav .fas{
+     display: block;
+  }
+  
+  nav {
+     height: 80px;
+     padding: 0 10px;
+  }
+  
+  .logo {
+     width: 70px;
+     margin-top: 5px;
+     margin-left: -5px;
+  }
+  
+  #sidemenu{
+     display: block;
+     background: linear-gradient(180deg, rgba(51, 48, 209, 2) 0%, rgba(51, 48, 209, 0.9) 100%);
+     text-align: center;
+     width: 200px;
+     right: -200px;
+     padding-top: 80px;
+     position: fixed;
+     top: 0;
+     z-index: 2;
+     transition: right 0.5s;
+  }
+  
+  .nav_bar1 ul li {
+     display: block;
+     font-size: 25px;
+     padding: 20px 50px 0;
+     margin: 10px 0px 0;
+  }
+  
+  /* nav buttons*/
+  .nav_btn{
+     margin: 50px 20px;
+  }
+  button {
+     width: 110px;
+     height: 40px;
+     font-size: 0.8rem;
+     margin: 5px 0px;
+  }
+  
+  /* hero section */
+  #illustration {
+     display: block;
+     margin: 0 auto;
+  }
+  
+  .illustration1 {
+     width: 100%;
+     height: 250px;
+     left: 0px;
+  }
+  .illustration2 {
+     margin: 0 auto;
+     padding: 0 30px;
+  }
+  .illustration2 h1 {
+     margin-top: 20px;
+     font-size: 25px;
+  }
+  .illustration2 h3 {
+     margin-top: 5px;
+     margin-left: 0px;
+     font-size: 18px;
+  }
+  .illustration2 button {
+     width: 140px;
+     height: 50px;
+     top: 60px;
+     margin: 30px auto 0;
+     font-size: 18px;
+  }
+  
+  /* Feature Section */
+  
+  #feature h2 {
+     margin-top: 50px;
+     font-size: 2rem;
+  }
+  
+  .features1 {
+     display: block;
+     margin: 0 auto;
+     padding: 0 20px;
+  }
+  
+  .features1_items {
+     margin: 30px auto 60px;
+     padding: 24px 10px 0;
+     color: #2e2a2a;
+     width: 65%;
+     height: 197px;
+  }
+  
+  .features1_items h3 {
+     font-size: 28px;
+  }
+  
+  .features1_items p {
+     font-size: 15px;
+  }
+  
+  .feature_btn {
+     width: 140px;
+     height: 50px;
+     margin: 30px auto;
+     font-size: 18px;
+  }
+  
+  /* Usage Section */
+  #usage{
+     margin: 50px auto 0;
+  }
+  
+  .json {
+     display: block;
+     margin: 10px auto 0;
+  }
+  
+  .json1 {
+     width: 200px;
+     height: 180px;
+  }
+  .json1 p {
+     margin: 10px 10px;
+     padding: 30px 0;
+     font-size: 20px;
+  }
+  
+  .json2 {
+     width: 425px;
+     margin-top: 60px;
+     margin-left: -60px;
+  }
+  
+  .csv {
+     display: block;
+     margin: 0 auto;
+  }
+  
+  .csv1 {
+     width: 60%;
+     margin-top: -180px;
+  }
+  
+  .csv2 {
+     width: 200px;
+     height: 180px;
+     margin-top: -100px;
+  }
+  
+  .csv2 p {
+     margin: 0px 10px;
+     padding: 30px 0;
+     font-size: 20px;
+  }
+  
+  /* About Section */
+  #about {
+     margin: 100px auto 0;
+     text-align: center;
+     color: #3330d1;
+  }
+  
+  .about_heading{
+     font-size: 1.8rem;
+  }
+  
+  .how_it_works {
+     display: block;
+     margin: 20px auto;
+  }
+  
+  .how_item{
+     width: 180px;
+  }
+  
+  .how_item img{
+     width: 100%;
+  }
+  
+  /* Sponsors section */
+  
+  .organisations{
+     margin: 120px auto 0;
+  }
+  
+  .organisations h1{
+     font-size: 1.5rem;
+     padding: 0 20px;
+  }
+  
+  .organisations_item {
+     display: flex;
+     margin: 30px auto;
+  }
+  
+  .ingressive_logo{
+     margin-top: 0px;
+  }
+  
+  .ingressive_logo img, .zuri_logo img{
+     width: 50%;
   }
   
   /* Footer Section */
@@ -873,4 +879,7 @@ button {
      font-size: 18px;
   }
   
-  }
+  }  
+
+
+
