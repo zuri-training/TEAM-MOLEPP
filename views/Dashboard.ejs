@@ -24,7 +24,7 @@
     </div>
 
         <div class="right">
-            <p>Tiwa_Bliss</p>
+            <p><Tiwa_Bliss></p>
             <button><a href="/index"><p class="header_right_logout">Log Out</p></a></button>
 
         </div>
@@ -36,10 +36,10 @@
 <div class="nav-bar">
     <div class="nav-bar__in">
         <ul class="nav-bar__in_ul">
-        <a href="/Dashboard/Dashboard.html"><li id="upload_txt"><i class="fa fa-upload"></i> Upload</li></a>
-        <a href="/All Files/files.html"><li><i class="fa fa-folder"></i> All Files</li>
-        <a href="/Saved Files/saved.html"><li><i class="fa fa-folder"></i> Saved Files</li></a>
-        <a href="/Download Page/download.html"><li><i class="fa fa-download"></i> Download</li></a>
+        <a href="/Dashboard"><li id="upload_txt"><i class="fa fa-upload"></i> Upload</li></a>
+        <a href="/files"><li><i class="fa fa-folder"></i> All Files</li>
+        <a href="/saved"><li><i class="fa fa-folder"></i> Saved Files</li></a>
+        <a href="/download"><li><i class="fa fa-download"></i> Download</li></a>
     </ul>
         <ul class="nav-bar__in_ul_second">
         <li><i class="fa fa-hand-o-right"></i> Support</li>
@@ -56,29 +56,29 @@
         <h2 class="upload"><b>MY DASHBOARD</b></h2>
         <hr class="line">
     </div>
-       <div class="sect-two_right_img"> 
+       <form class="sect-two_right_img" action="/download" method="post"> 
         <div class="dropdown">
                 <label for="File Format" id="file_format">Select file format</label>
                 <select name="File Format" id="">
-                <option value="Csv">Csv</option>
-                <option value="Json">Json</option>
+                <option value="csv">csv</option>
+                <option value="json">json</option>
             </select>
             
         </div>
     
         <div class="sect-two_right_choose_file">
-            <label><span class="file_type_span"><input type="file" class="file_type" /> Choose File</span></label>
-            <label><span>No File Chosen</span></label>
+            <label><span class="file_type_span"><input name="file" type="file" class="file_type" /> Choose File</span></label>
+            <!-- <label><span>No File Chosen</span></label> -->
         </div>
         
         <div class="sect_two_imgdv">
             <div class="imgdv">
-                <label><input type="file" style="display:none" /><img src="../Image/Doctors Folder.png" alt="Doctors Folder" /></label>
+                <label><input name="file" type="file" style="display:none" /><img src="/Image/Doctors Folder.png" alt="Doctors Folder" /></label>
             </div>
             <p class="caption"> <b> DRAG AND DROP YOUR FILES HERE</b></p>
             <a class="btn" href=""><button class="sect-two_right_img_btn">Split Files</button></a>
         </div>
-    </div>     
+    </form>    
 
     </div>
 </main>

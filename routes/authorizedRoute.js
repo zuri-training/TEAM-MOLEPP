@@ -11,6 +11,12 @@ const {
   loginForm,
   register,
   registerForm,
+  dashboard,
+  download,
+  saved,
+  files,
+  save,
+  fileHandler,
 } = require("../controllers/pageController");
 
 passport.use(
@@ -52,37 +58,14 @@ function isLoggedIn(req, res, next) {
 router.get("/login", loginForm);
 
 router.post("/login/password", login);
+router.get("/login/password", dashboard);
 router.get("/register", registerForm);
 router.post("/register/user", register);
-// router.get("/donationform", donationFormController.donationPageCont);
-// router.get("/createpage", pageController.createPageCont);
-
-// router.get("/about", function (req, res) {
-//   res.render("about");
-// });
-// router.get("/faculties", function (req, res) {
-//   res.render("faculties");
-// });
-
-// router.get("/about", function (req, res) {
-//   res.render("about");
-// });
-// router.get("/faculties", function (req, res) {
-//   res.render("faculties");
-// });
-// router.get("/academic", function (req, res) {
-//   res.render("academic");
-// });
-// router.get("/payment", function (req, res) {
-//   res.render("payment");
-// });
-// router.get("/donate", function (req, res) {
-//   res.render("donate");
-// });
-// router.get("/userModel", function (req, res) {
-//   res.render("userModel");
-// });
-// router.get("/contact", function (req, res) {
-//   res.render("contact");
-// });
+router.get("/Dashboard", dashboard);
+router.post("/Dashboard", fileHandler);
+router.get("/download", download);
+router.post("/download", download);
+router.get("/saved", saved);
+router.get("/save", save);
+router.get("/files", files);
 module.exports = router;
