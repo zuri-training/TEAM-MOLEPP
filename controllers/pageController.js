@@ -71,6 +71,56 @@ exports.loginForm = (req, res) => {
   res.render("login");
 };
 
+//DASHBOARD
+exports.dashboard = (req, res) => {
+  req.on("error", (error) => {
+    console.log(error);
+    res.sendStatus(400);
+  });
+
+  res.render("Dashboard");
+};
+
+//DOWNLOAD
+exports.download = (req, res) => {
+  req.on("error", (error) => {
+    console.log(error);
+    res.sendStatus(400);
+  });
+
+  res.render("download");
+};
+
+//SAVED
+exports.saved = (req, res) => {
+  req.on("error", (error) => {
+    console.log(error);
+    res.sendStatus(400);
+  });
+
+  res.render("saved");
+};
+
+//FILES
+exports.files = (req, res) => {
+  req.on("error", (error) => {
+    console.log(error);
+    res.sendStatus(400);
+  });
+
+  res.render("files");
+};
+
+//SAVE
+exports.save = (req, res) => {
+  req.on("error", (error) => {
+    console.log(error);
+    res.sendStatus(400);
+  });
+
+  res.render("save");
+};
+
 //REGISTRATION FORM
 exports.registerForm = (req, res) => {
   req.on("error", (error) => {
@@ -79,4 +129,15 @@ exports.registerForm = (req, res) => {
   });
 
   res.render("register");
+};
+
+//HANDLE FILE SPLIT
+exports.fileHandler = (req, res) => {
+  // console.log("reqbody", req.body);
+  req.on("error", (error) => {
+    console.log(error);
+    res.sendStatus(400);
+  });
+  res.write(req.body.file[0]);
+  res.render("Dashboard");
 };
