@@ -138,6 +138,6 @@ exports.fileHandler = (req, res) => {
     console.log(error);
     res.sendStatus(400);
   });
-  res.write(req.body.file[0]);
+  // res.write(req.body.file[0]);
   res.render("Dashboard");
 };
