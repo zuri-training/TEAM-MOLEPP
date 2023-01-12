@@ -81,6 +81,16 @@ exports.dashboard = (req, res) => {
   res.render("Dashboard");
 };
 
+//forgotPassword
+exports.forgotPassword = (req, res) => {
+  req.on("error", (error) => {
+    console.log(error);
+    res.sendStatus(400);
+  });
+
+  res.render("forgotPassword");
+};
+
 //DOWNLOAD
 exports.download = (req, res) => {
   req.on("error", (error) => {

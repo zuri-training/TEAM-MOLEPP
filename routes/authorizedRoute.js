@@ -12,6 +12,7 @@ const {
   register,
   registerForm,
   dashboard,
+  forgotPassword,
   download,
   saved,
   files,
@@ -59,6 +60,8 @@ router.get("/login", loginForm);
 
 router.post("/login/password", login);
 router.get("/login/password", dashboard);
+router.post("/forgotPassword", forgotPassword);
+router.get("/forgotPassword", forgotPassword);
 router.get("/register", registerForm);
 router.post("/register/user", register);
 router.get("/Dashboard", dashboard);

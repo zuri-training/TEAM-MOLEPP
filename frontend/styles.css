@@ -629,7 +629,145 @@ nav .fas{
   
   }
 
-    
+  @media screen and  (max-width: 600px) {
+
+   .illustration2 {
+      padding: 0 35px;
+      margin: -300px auto 0;
+   }
+   
+   /* Usage Section */
+   #usage{
+      margin: 50px 0px 0;
+   }
+   
+   .json {
+      display: block;
+      margin: 10px 0;
+   }
+   
+   .json1 {
+      width: 300px;
+      height: 230px;
+      margin: 10px auto;
+   }
+   .json1 p {
+      margin: 10px 10px;
+      padding: 30px 0;
+      font-size: 26px;
+   }
+   
+   .json2 {
+      width: 100%;
+      margin: 60px auto 0;
+   }
+   
+   .csv {
+      display: block;
+      margin-top: 0px;
+   }
+   
+   .csv1 {
+      width: 45%;
+      margin: -110px auto 0;
+   }
+   
+   .csv2 {
+      width: 300px;
+      height: 230px;
+      margin: -110px auto 0;
+   }
+   
+   .csv2 p {
+      margin: 10px 10px;
+      padding: 30px 0;
+      font-size: 26px;
+   }
+   
+   /* About Section */
+   #about {
+      margin-top: 100px;
+      text-align: center;
+   }
+   
+   .about_heading{
+      font-size: 2rem;
+      text-align: center;
+   }
+   
+   .how_it_works {
+      display: block;
+      margin: 20px 0;
+   }
+   
+   .how_item{
+      width: 280px;
+      margin: 20px auto;
+   }
+   
+   .how_item img{
+      width: 100%;
+   }
+   
+   /* Sponsors section */
+   
+   .organisations{
+      margin-top: 120px;
+   }
+   
+   .organisations h1{
+      font-size: 2rem;
+   }
+   
+   .organisations_item {
+      display: flex;
+      margin: 30px;
+   }
+   
+   .ingressive_logo{
+      margin-top: 0px;
+   }
+   
+   .ingressive_logo img, .zuri_logo img{
+      width: 60%;
+   }
+   
+   /* Footer Section */
+   #footer {
+      height: 100%;
+   }
+   
+   .product_icon{
+      margin: 10px 0;
+      justify-content: center;
+   }
+   
+   #footer_content {
+      text-align: center;
+      display: block;
+      padding-top: 50px;
+   }
+   
+   .footer_content_item{
+      margin-top: 40px;
+   }
+   
+   .footer_content_item h4{
+      font-size: 25px;
+   }
+   
+   .footer_content_item a{
+      font-size: 20px;
+      line-height: 25px;
+   }
+   
+   .footer_bottom {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 18px;
+   }
+   
+   }    
 
   @media screen and (max-width: 375px) {
    /*nav bar container*/
